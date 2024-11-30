@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -63,6 +63,69 @@
     <div class="box center">Centered</div>
     <div class="box full-span">Full Span (5% Padding)</div>
   </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Percentage Height</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensures body fills the viewport */
+        }
+
+        /* Outer container with explicit height */
+        .outer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 300px; /* Explicit height */
+            width: 80%;
+            border: 2px solid blue;
+            margin-bottom: 20px;
+        }
+
+        /* Outer container without explicit height */
+        .outer-container-auto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: auto; /* No explicit height */
+            width: 80%;
+            border: 2px solid red;
+        }
+
+        /* Inner box with percentage-based height */
+        .inner-box {
+            width: 50%;
+            height: 50%; /* 50% of the parent's height */
+            background-color: lightgreen;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Outer container with an explicit height -->
+    <div class="outer-container">
+        <p>Outer Container (300px height)</p>
+        <div class="inner-box"></div>
+    </div>
+
+    <!-- Outer container with auto height -->
+    <div class="outer-container-auto">
+        <p>Outer Container (auto height)</p>
+        <div class="inner-box"></div>
+    </div>
 
 </body>
 </html>

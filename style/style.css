@@ -126,21 +126,22 @@ header{
         display: none;
     }
     .hamburger{
-        height: 6.7988%;
+        /* max-height: 24px; */
         width: 6.7988%;
+        aspect-ratio: 1 / 1;
         display: flex;
         justify-content: center;
         align-items: center; 
         flex-direction: column;
-        gap: 4px;
+        gap: 16.67%;
         margin: 0;
         /* display: none; */
     }
     .hamburger div{
         width: 75%;
-        height: 2px;
+        aspect-ratio: 9 / 1;
         background-color: var(--other-text-color);
-        border-radius: 2px;
+        border-radius: 1px;
     }
     
 }
