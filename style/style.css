@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+.inter-font{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 16px; */
+    font-size: 1.111vw;
+}
+.miama-font{
+    font-family: 'Miama', sans-serif;
+}
+
+
+/***Variables***/
+:root{
+    --color-orange:rgba(230, 83, 60, 1);
+    --regular-text-color: rgba(255, 255, 255, 0.5);
+    --other-text-color:rgba(255, 255, 255, 1);
+}
+/***Shared Styles***/
+body{
+    margin: 0;
+    padding: 0;
+}
+.text-regular{
+    color:var(--regular-text-color);
+    font-size: 0.875rem;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--other-text-color);
+}
+.btn-primary{
+    width: 224px;
+    height: 54px;
+    color: var(--other-text-color);
+    background-color: var(--color-orange);
+    padding: 16px 46.5px;
+    text-align: center;
+}
+.display-flex{
+    display: flex;
+}
+/***Header***/
+header{
+    margin: 0;
+    padding-left: 13.19%;
+    padding-right: 13.19%;
+    padding-top: 3.9583%;
+    padding-bottom: 0px;
+    background-color: black;
+    /* background: linear-gradient(to bottom,rgba(17, 17, 17, 1) 0%,  rgba(119, 119, 119, 0) 100%); */
+}
+
+/*Nav Bar related Style*/
+.nav{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.fitness-title{
+    color: var(--color-orange);
+    font-size:2.25rem;
+    font-style: italic;
+    font-weight:900;
+    margin: 0;
+
+}
+.nav-item-list{
+    box-sizing: border-box;
+    padding: 0.860215%;
+    padding-right: 4.301%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    list-style: none;
+    width: 43.867%;
+    border-radius: 39px;
+}
+.item{
+    color: var(--other-text-color);
+    text-align: center;
+    font-size: 1.125rem;
+
+}
+#item-home{
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 19.784%;
+    padding:1.72% 4.301% ;
+    border-radius: 46px;
+    border: none;
+    background-color: var(--color-orange);
+    
+ 
+}
+.hamburger{
+    display: none;
+}
+
+/* Banner Related Style */
+
+
+
+/* Responsive Styles */
+
+/* Small device */
+
+@media screen and (max-width: 576px) {
+    /* Font Styles */
+    .inter-font{
+        font-size: 4.07vw;
+    }
+    /* Shared Styles */
+    
+    /* max width: 393 */
+    
+    /* Header */
+    header{
+        padding: 13.23% 5.089% 0%; /* Beacuse We're gonnal apply common padding to all */
+    }
+    .nav-item-list{
+        display: none;
+    }
+    .hamburger{
+        height: 6.7988%;
+        width: 6.7988%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        gap: 4px;
+        margin: 0;
+        /* display: none; */
+    }
+    .hamburger div{
+        width: 75%;
+        height: 2px;
+        background-color: var(--other-text-color);
+        border-radius: 2px;
+    }
+    
+}
+
+
+
+

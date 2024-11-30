@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Absolute with Percentages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 20px auto;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      /* overflow: hidden; */
+    }
+    .box {
+      position: absolute;
+      padding: 10px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .top-left {
+      top: 100%;
+      left: 5%;
+      background-color: coral;
+    }
+    .bottom-right {
+      bottom: 20%;
+      right: 10%;
+      background-color: lightblue;
+    }
+    .center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: lightgreen;
+    }
+    .full-span {
+      top: 5%;
+      left: 5%;
+      right: 5%;
+      bottom: 5%;
+      background-color: rgba(128, 0, 128, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Absolute Position with Percentages</h1>
+  <p>This example demonstrates how <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> percentages work for absolutely positioned elements.</p>
+
+  <div class="container">
+    <div class="box top-left">Top: 10%, Left: 5%</div>
+    <div class="box bottom-right">Bottom: 20%, Right: 10%</div>
+    <div class="box center">Centered</div>
+    <div class="box full-span">Full Span (5% Padding)</div>
+  </div>
+
+</body>
+</html>
