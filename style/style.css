@@ -34,12 +34,12 @@ body{
     color: var(--other-text-color);
 }
 .btn-primary{
-    width: 224px;
-    height: 54px;
     color: var(--other-text-color);
     background-color: var(--color-orange);
-    padding: 16px 46.5px;
     text-align: center;
+    border-radius: 42px;
+    font-size: 1.125rem;
+    border: none;
 }
 .display-flex{
     display: flex;
@@ -47,17 +47,13 @@ body{
 /***Header***/
 header{
     margin: 0;
-    padding-left: 13.19%;
-    padding-right: 13.19%;
-    padding-top: 3.9583%;
-    padding-bottom: 0px;
+    padding: 3.9583% 13.19% 0%;
     background-color: black;
     /* background: linear-gradient(to bottom,rgba(17, 17, 17, 1) 0%,  rgba(119, 119, 119, 0) 100%); */
 }
 
 /*Nav Bar related Style*/
 .nav{
-    
     justify-content: space-between;
     align-items: center;
 }
@@ -67,7 +63,6 @@ header{
     font-style: italic;
     font-weight:900;
     margin: 0;
-
 }
 .nav-item-list{
     box-sizing: border-box;
@@ -94,17 +89,122 @@ header{
     border-radius: 46px;
     border: none;
     background-color: var(--color-orange);
-    
- 
 }
 .hamburger{
     display: none;
 }
 
 /* Banner Related Style */
+.banner{
+    align-items: center;
+    gap: 15.75%;
+    padding-top: 3.0188%;
+    /* AFTER PADDING TO HEADER, THE WIDTH BANNER WILL TAKE is 1060px */
+}
+.banner-content{
+    /* WIDTH:   599.05 PX */
+    /* border: 1px solid orange; */
+    width: 56.5141%;
+}
+.banner-title{
+    color: var(--other-text-color);
+    font-size: 4.875rem;
+    line-height: 1.2;
+    font-weight: 900;
+    margin: 0;
+    
+}
 
+#title-shape{
+    display: inline-block;
+    width: 36.8%;
+    transform-origin: left;
+    font-weight: 200;
+    font-size: 4.875rem;
+    transform: scale(1.95);
+    /* height: 33.19%; */
+    
+    /* background-color: red; */
+}
 
+.banner-content p{
+    color: var(--regular-text-color);
+}
 
+.banner-btn-container{
+    gap:2.6923%;
+}
+.banner-btn-container button{
+    width: 43.07%;
+    aspect-ratio: 224/54;
+}
+
+#download-app-btn{
+    border: 1px solid white;
+    background-color: transparent;
+}
+.hero-container{
+    /* border: 1px solid red; */
+    /* width: 349 */
+    width: 32.924%;
+    aspect-ratio: 349/580;
+    position: relative;
+}
+.hero-container>img{
+    display: block;
+    width: 100%;
+}
+.videos{
+    position: absolute;
+    width: 57.306%;
+    aspect-ratio: 200/97;
+    /* border: 1px solid red; */
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding-top: 5.157%;
+    padding-bottom: 5.157%;
+}
+.tutorial-videos{
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    top: 72.586%;
+    left: -31.920% ;
+}
+.orange-ball{
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    
+}
+.tutorial-title{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:var(--other-text-color);
+}
+.tutorial-text{
+    color: var(--regular-text-color);
+}
+.workout-videos{
+    text-align: center;
+    top: 21.5517%;
+    right: -21.203%;
+}
+
+.workout-title{
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--other-text-color);
+    font-weight: 900;
+}
+
+.workout-text{
+    font-size: 0.8125rem;
+    color: var(--regular-text-color);
+}   
 /* Responsive Styles */
 
 /* Small device */
@@ -118,7 +218,7 @@ header{
     
     /* max width: 393 */
     
-    /* Header */
+    /****Header****/
     header{
         padding: 13.23% 5.089% 0%; /* Beacuse We're gonnal apply common padding to all */
     }
@@ -126,7 +226,6 @@ header{
         display: none;
     }
     .hamburger{
-        /* max-height: 24px; */
         width: 6.7988%;
         aspect-ratio: 1 / 1;
         display: flex;

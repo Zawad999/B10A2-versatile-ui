@@ -1,131 +1,58 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Position Absolute with Percentages</title>
+  <title>Typography Design</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      background-color: #121212; /* Match the dark background */
+      color: white;
+      font-family: Arial, sans-serif; /* Default font */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-    .container {
-      position: relative;
-      width: 400px;
-      height: 300px;
-      margin: 20px auto;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      /* overflow: hidden; */
-    }
-    .box {
-      position: absolute;
-      padding: 10px;
-      color: #fff;
-      font-size: 14px;
-      font-weight: bold;
+
+    .text-container {
       text-align: center;
     }
-    .top-left {
-      top: 100%;
-      left: 5%;
-      background-color: coral;
+
+    .line {
+      font-weight: bold;
+      font-size: 4rem; /* Adjust size for the main text */
     }
-    .bottom-right {
-      bottom: 20%;
-      right: 10%;
-      background-color: lightblue;
+
+    .cursive {
+      font-family: "Dancing Script", cursive; /* Cursive font for "shape" */
+      font-size: 9rem; /* Slightly larger than the bold text */
+      font-style: italic;
+      display: inline-block;
     }
-    .center {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: lightgreen;
+
+    .ampersand {
+      font-family: "Dancing Script", cursive; /* Same style as "shape" */
+      font-size: 4rem;
+      font-style: italic;
     }
-    .full-span {
-      top: 5%;
-      left: 5%;
-      right: 5%;
-      bottom: 5%;
-      background-color: rgba(128, 0, 128, 0.5);
+
+    .small-text {
+      font-size: 3.5rem; /* Match "stay healthy" with "Get body in" */
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-  <h1>CSS Absolute Position with Percentages</h1>
-  <p>This example demonstrates how <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> percentages work for absolutely positioned elements.</p>
-
-  <div class="container">
-    <div class="box top-left">Top: 10%, Left: 5%</div>
-    <div class="box bottom-right">Bottom: 20%, Right: 10%</div>
-    <div class="box center">Centered</div>
-    <div class="box full-span">Full Span (5% Padding)</div>
+  <div class="text-container">
+    <div class="line">Get body in</div>
+    <div>
+      <span class="cursive">shape</span>
+      <span class="ampersand">&</span>
+      <span class="small-text">stay healthy</span>
+    </div>
   </div>
-
-</body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Percentage Height</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Ensures body fills the viewport */
-        }
-
-        /* Outer container with explicit height */
-        .outer-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 300px; /* Explicit height */
-            width: 80%;
-            border: 2px solid blue;
-            margin-bottom: 20px;
-        }
-
-        /* Outer container without explicit height */
-        .outer-container-auto {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: auto; /* No explicit height */
-            width: 80%;
-            border: 2px solid red;
-        }
-
-        /* Inner box with percentage-based height */
-        .inner-box {
-            width: 50%;
-            height: 50%; /* 50% of the parent's height */
-            background-color: lightgreen;
-            border: 2px solid black;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Outer container with an explicit height -->
-    <div class="outer-container">
-        <p>Outer Container (300px height)</p>
-        <div class="inner-box"></div>
-    </div>
-
-    <!-- Outer container with auto height -->
-    <div class="outer-container-auto">
-        <p>Outer Container (auto height)</p>
-        <div class="inner-box"></div>
-    </div>
-
 </body>
 </html>
