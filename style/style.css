@@ -23,6 +23,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 .text-regular{
     color:var(--regular-text-color);
@@ -48,7 +49,7 @@ body{
 header{
     margin: 0;
     padding: 3.9583% 13.19% 0%;
-    background-color: black;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 1) 0%, rgba(119, 119, 119,0.2)100%);
     /* background: linear-gradient(to bottom,rgba(17, 17, 17, 1) 0%,  rgba(119, 119, 119, 0) 100%); */
 }
 
@@ -102,9 +103,11 @@ header{
     /* AFTER PADDING TO HEADER, THE WIDTH BANNER WILL TAKE is 1060px */
 }
 .banner-content{
+    flex-direction: column;
     /* WIDTH:   599.05 PX */
     /* border: 1px solid orange; */
     width: 56.5141%;
+    gap: 4.6744%;
 }
 .banner-title{
     color: var(--other-text-color);
@@ -158,13 +161,21 @@ header{
     position: absolute;
     width: 57.306%;
     aspect-ratio: 200/97;
-    /* border: 1px solid red; */
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
     padding-top: 5.157%;
     padding-bottom: 5.157%;
 }
+/* .videos{
+    position: absolute;
+    width: 45.84%;
+    aspect-ratio: 160/56;
+
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 11.24% 15%;
+} */
 .tutorial-videos{
     justify-content: center;
     align-items: center;
@@ -187,6 +198,8 @@ header{
 }
 .tutorial-text{
     color: var(--regular-text-color);
+    margin: 0;
+    padding: 0;
 }
 .workout-videos{
     text-align: center;
@@ -202,6 +215,8 @@ header{
 }
 
 .workout-text{
+    margin: 0;
+    padding: 0;
     font-size: 0.8125rem;
     color: var(--regular-text-color);
 }   
@@ -210,18 +225,32 @@ header{
 /* Small device */
 
 @media screen and (max-width: 576px) {
+
+    /* figma max width 393 */
     /* Font Styles */
     .inter-font{
         font-size: 4.07vw;
     }
     /* Shared Styles */
+    header{
+        padding-left:5.089%;
+        padding-right: 5.089%;
+    }
+    .banner{
+        flex-direction: column;
+    }
     
-    /* max width: 393 */
+    .banner-content, .hero-container{
+        width: 100%;
+    }
+    
     
     /****Header****/
     header{
-        padding: 13.23% 5.089% 0%; /* Beacuse We're gonnal apply common padding to all */
+        padding-top: 13.23%;
+        padding-bottom: 0%;
     }
+    /* nav-bar related styles */
     .nav-item-list{
         display: none;
     }
@@ -242,7 +271,91 @@ header{
         background-color: var(--other-text-color);
         border-radius: 1px;
     }
+
+
+    /* banner-related styles */
+    /* figma max width 393 */
+    .banner{
+        gap: 13.5977%;
+    }
+    .banner-title{
+        font-size: 2.25rem;
+    }
+    .banner-content{
+        gap: 7.95%;
+    }
+    #title-shape{
+        width: 27.3%;
+        font-size: 2.25rem;
+        transform: scale(1.95);
+        /* height: 33.19%; */
+        
+        /* background-color: red; */
+    }
+    .banner-content p{
+        color: var(--regular-text-color);
+        width: 77.62%;
+    }
+    .banner-btn-container{
+        justify-content: space-between;
+    }
+    .banner-btn-container button{
+        width: 48.011%;
+        aspect-ratio: 169/54;
+    }
+    #download-app-btn{
+        border: 1px solid white;
+        background-color: transparent;
+    }
+    .hero-container{
+        aspect-ratio: 349/580;
+        position: relative;
+    }
+    /* .hero-container>img{
+        display: block;
+        width: 100%;
+    } */
+    /* .videos{
+        
+        
+    } */
+    .tutorial-videos{
+        width: 44.1189%;
+        height: 12.34%;
+        gap: 5.823%;
+        top: 46.06%;
+        left: 3.3994% ;
+        padding-top: 9.07%;
+        padding-bottom: 9.07%;
+        border-radius: 9.07px;
+    }
+    .orange-ball{
+        width: 20%;
+        aspect-ratio: 1;
+    }
+    .tutorial-title{
+        font-size: 1.13375rem;
+    }
+    .tutorial-text{
+        font-size: 0.75625rem;
+    }
+    .workout-videos{
+        width: 41.33%;
+        height: 12.6003%;
+        top: 8.09%;
+        right: 3.6515%;
+        border-radius: 9.07px;
+        /* padding-top: 8.731%;
+        padding-bottom: 7.621%; */
+    }
     
+    .workout-title{
+        font-size: 1.89rem;
+    }
+    
+    .workout-text{
+        font-size: 0.614375rem;
+    }
 }
 
 
