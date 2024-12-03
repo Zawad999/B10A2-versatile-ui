@@ -25,14 +25,26 @@ body{
     padding: 0;
     background-color: black;
 }
+main{
+    padding: 0% 13.19%;
+}
+section{
+    margin-top: 9.57%;
+}
 .text-regular{
     color:var(--regular-text-color);
     font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.714;
+    letter-spacing: 2.14%;
 }
 .section-title{
+    margin: 0;
+    margin-bottom: 14px;
     font-size: 3rem;
     font-weight: 900;
     color: var(--other-text-color);
+    line-height: 120%;
 }
 .btn-primary{
     color: var(--other-text-color);
@@ -49,8 +61,7 @@ body{
 header{
     margin: 0;
     padding: 3.9583% 13.19% 0%;
-    background: linear-gradient(to bottom, rgba(17, 17, 17, 1) 0%, rgba(119, 119, 119,0.2)100%);
-    /* background: linear-gradient(to bottom,rgba(17, 17, 17, 1) 0%,  rgba(119, 119, 119, 0) 100%); */
+    background: linear-gradient(to bottom, rgba(119, 119, 119,0.3)0%,rgba(17, 17, 17, 1) 100% );
 }
 
 /*Nav Bar related Style*/
@@ -100,12 +111,9 @@ header{
     align-items: center;
     gap: 15.75%;
     padding-top: 3.0188%;
-    /* AFTER PADDING TO HEADER, THE WIDTH BANNER WILL TAKE is 1060px */
 }
 .banner-content{
     flex-direction: column;
-    /* WIDTH:   599.05 PX */
-    /* border: 1px solid orange; */
     width: 56.5141%;
     gap: 4.6744%;
 }
@@ -125,13 +133,10 @@ header{
     font-weight: 200;
     font-size: 4.875rem;
     transform: scale(1.95);
-    /* height: 33.19%; */
-    
-    /* background-color: red; */
 }
 
 .banner-content p{
-    color: var(--regular-text-color);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .banner-btn-container{
@@ -147,8 +152,6 @@ header{
     background-color: transparent;
 }
 .hero-container{
-    /* border: 1px solid red; */
-    /* width: 349 */
     width: 32.924%;
     aspect-ratio: 349/580;
     position: relative;
@@ -167,15 +170,7 @@ header{
     padding-top: 5.157%;
     padding-bottom: 5.157%;
 }
-/* .videos{
-    position: absolute;
-    width: 45.84%;
-    aspect-ratio: 160/56;
 
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 11.24% 15%;
-} */
 .tutorial-videos{
     justify-content: center;
     align-items: center;
@@ -197,7 +192,7 @@ header{
     color:var(--other-text-color);
 }
 .tutorial-text{
-    color: var(--regular-text-color);
+    color: rgba(239, 237, 232, 0.65);
     margin: 0;
     padding: 0;
 }
@@ -218,32 +213,82 @@ header{
     margin: 0;
     padding: 0;
     font-size: 0.8125rem;
-    color: var(--regular-text-color);
+    color: rgba(255, 255, 255, 0.65);
 }   
-/* Responsive Styles */
 
+
+/* ****Habit Section Related Styles**** */
+.habit-section{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.habit-intros{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 8.64%;
+    width: 64.27%;
+    aspect-ratio: 671/120;
+} 
+
+.habit-container{
+    display: grid;
+    grid-template-columns: repeat(4, 22.126%);
+    justify-content: space-between;
+}
+.habit{
+    text-align: center;
+}
+.habit-display{
+    width: 77.92%;
+    margin: 0 auto 16.66%;
+    aspect-ratio: 1;
+}
+.habit-display img{
+    width:100%;
+    border-radius: 50%;
+}
+.habit-name{
+    margin: 0;
+    margin-bottom: 2.597%;
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--other-text-color);
+}
+
+/*****Responsive Styles*****/
 /* Small device */
 
 @media screen and (max-width: 576px) {
 
-    /* figma max width 393 */
-    /* Font Styles */
+    /***Root Font***/
     .inter-font{
         font-size: 4.07vw;
     }
-    /* Shared Styles */
-    header{
+
+    /***Shared Styles***/
+    header, main{
         padding-left:5.089%;
         padding-right: 5.089%;
     }
     .banner{
         flex-direction: column;
     }
-    
+    section{
+        margin-top: 18.696%;
+    }
+    .habit-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .banner-content, .hero-container{
         width: 100%;
     }
-    
+    .section-title{
+        font-size: 2rem;
+    }
     
     /****Header****/
     header{
@@ -263,7 +308,6 @@ header{
         flex-direction: column;
         gap: 16.67%;
         margin: 0;
-        /* display: none; */
     }
     .hamburger div{
         width: 75%;
@@ -274,26 +318,22 @@ header{
 
 
     /* banner-related styles */
-    /* figma max width 393 */
     .banner{
+        padding-top: 14.48%;
         gap: 13.5977%;
     }
     .banner-title{
         font-size: 2.25rem;
     }
     .banner-content{
-        gap: 7.95%;
+        gap: 8.35%;
     }
     #title-shape{
         width: 27.3%;
         font-size: 2.25rem;
         transform: scale(1.95);
-        /* height: 33.19%; */
-        
-        /* background-color: red; */
     }
     .banner-content p{
-        color: var(--regular-text-color);
         width: 77.62%;
     }
     .banner-btn-container{
@@ -305,20 +345,12 @@ header{
     }
     #download-app-btn{
         border: 1px solid white;
-        background-color: transparent;
     }
     .hero-container{
         aspect-ratio: 349/580;
         position: relative;
     }
-    /* .hero-container>img{
-        display: block;
-        width: 100%;
-    } */
-    /* .videos{
-        
-        
-    } */
+
     .tutorial-videos{
         width: 44.1189%;
         height: 12.34%;
@@ -345,8 +377,6 @@ header{
         top: 8.09%;
         right: 3.6515%;
         border-radius: 9.07px;
-        /* padding-top: 8.731%;
-        padding-bottom: 7.621%; */
     }
     
     .workout-title{
@@ -356,6 +386,34 @@ header{
     .workout-text{
         font-size: 0.614375rem;
     }
+
+
+    /* ****Habit Section Related Styles**** */
+    /* .habit-section{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } */
+
+    .habit-intros{
+        margin-bottom: 18.23%;
+        width: 94.08%;
+    } 
+
+    .habit-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 68.3431%);
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .habit-display{
+        margin-bottom:16.66%;
+        width: 77.92%;
+        aspect-ratio: 1;
+    }
+    
 }
 
 
