@@ -13,6 +13,10 @@
 }
 
 
+/* To Hide */
+#display-hide{
+    display: none;
+}
 /***Variables***/
 :root{
     --color-orange:rgba(230, 83, 60, 1);
@@ -30,6 +34,7 @@ main{
 }
 section{
     margin-top: 9.57%;
+    width: 100%;
 }
 .text-regular{
     color:var(--regular-text-color);
@@ -259,6 +264,45 @@ header{
     color: var(--other-text-color);
 }
 
+
+/* **** Join Section Related Styles**** */
+.join-section {
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    padding: 2.830% 3.0188% 2.7358% 5.094%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-section-desc{
+    width: 41.7924%;
+    aspect-ratio: 443/290;
+}
+.join-section-desc h2{
+    margin-bottom: 3.1602%;
+}
+.join-section-desc p{
+    margin-bottom: 7.6749%;
+}
+.join-section-desc button{
+    width: 50.56433%;
+    aspect-ratio: 224/54;
+}
+
+.run-img-container {
+    width: 34.52830%;
+    aspect-ratio: 366/312;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.run-img-container .img-desk{
+
+    width:100%;
+}
+.run-img-container .img-mobile{
+    display: none;
+}
+  
 /*****Responsive Styles*****/
 /* Small device */
 
@@ -274,7 +318,7 @@ header{
         padding-left:5.089%;
         padding-right: 5.089%;
     }
-    .banner{
+    .banner,.join-section{
         flex-direction: column;
     }
     section{
@@ -412,6 +456,43 @@ header{
         margin-bottom:16.66%;
         width: 77.92%;
         aspect-ratio: 1;
+    }
+
+    /* ***join-section*** */
+     .join-section {
+        
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 9.34844%;
+        
+    }
+    
+    .join-section-desc{
+        width: 100%;
+        margin-bottom: 10.80%;
+        aspect-ratio: 287/264;
+    }
+    .join-section-desc h2{
+        margin-bottom: 4.8780%;
+    }
+    .join-section-desc p{
+        margin-bottom: 8.36236%;
+    }
+    .join-section-desc button{
+        width: 100%;
+        aspect-ratio: 287/54;
+    }
+    
+    .run-img-container {
+        width: 100%;
+        aspect-ratio: 287/170;
+    }
+    .run-img-container .img-desk{
+        display: none;
+    }
+    .run-img-container .img-mobile{
+        display: block;
+        width: 100%;
     }
     
 }
