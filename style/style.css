@@ -444,13 +444,9 @@ header{
 }
 
 /* ***BMI section related styles*** */
-/* .main-div-2 {
-    
-} */
 
 .calculator-section {
     box-sizing: border-box;
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -594,11 +590,14 @@ header{
     }
 
     /***Shared Styles***/
-    header, main{
+    header{
         padding-left:5.089%;
         padding-right: 5.089%;
     }
-    .banner,.join-section{
+    .side-padding{
+        padding: 0% 5.089%;
+    }
+    .banner,.join-section, .calculator-and-chart{
         flex-direction: column;
     }
     section{
@@ -840,7 +839,81 @@ header{
         left:7.00636%;
     }
 
+    /* ***BMI section related styles*** */
+/* .main-div-2 {
     
+} */
+
+    .calculator-section-desc{
+        margin: 0;
+        width:fit-content;
+    }
+    .calculator-section-desc h2{
+        margin-bottom: 3.966%;
+    }
+
+
+    .calculator-and-chart {
+        justify-content:center;
+        gap: 0%;
+        padding-top: 8.629%;
+        padding-bottom: 10.9137%;
+    }
+
+    .calculator-chart{
+        width: 100%;
+        margin-bottom: 10.6598%;
+    }
+
+    .chart-title {
+        margin-bottom: 6.5155%;
+        font-size: 1rem;
+    }
+
+    .chart-table {
+        width: 87.8186%;
+        aspect-ratio: 310/216;
+    }
+
+    /*Calculator Styles */
+    .calculator{
+        width: 100%;
+        aspect-ratio: 0.89620;
+    }
+
+    .calculator-title {
+        font-size: 1.rem;
+        margin-bottom: 3.95480%;
+    }
+    .calculator>p{
+        margin-bottom: 9.60451%;
+    }
+
+    /* calculator form related style */
+    .form-grid input,select, option{
+        font-size: 1rem;
+    }
+    .form-grid{
+        grid-template-columns: 48.163% 48.163%;
+        aspect-ratio: 353/168;
+        gap: 3.38983%;
+    }
+    .form-grid input,#sex{
+        padding-left: 11.73%;
+        aspect-ratio: 170.5/48;
+    }
+    
+    .form-grid #activity-factor{
+        aspect-ratio: 7.354166;
+        padding-left: 5.665%;
+    }
+
+    #calc-buttton{
+        width: 63.27%;
+        aspect-ratio: 4.148;
+        text-align: center;
+        margin-top: 9.6045%;
+    }
 
     
 }
