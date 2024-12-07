@@ -664,9 +664,6 @@ footer {
     width: 100%;
     display: flex;
     gap: 9.631%;
-    justify-content: left;
-    align-items: start;
-    
 }
 .footer-description {
     width: 41.831%;
@@ -1118,7 +1115,7 @@ footer hr{
     }
     .footer-core-container{
         width: 100%;
-        aspect-ratio: 353/748;
+        aspect-ratio: 353/600;
         gap: 4.010%;
     }
     .footer-description {
@@ -1131,7 +1128,7 @@ footer hr{
     }
 
     .footer-services{
-        width: 100%;
+        width: 69.2513%;
         aspect-ratio: 353/518;
         gap: 3.861%;
     }
