@@ -578,7 +578,158 @@ header{
 }
 
 
+/* ***Team-section related styles*** */
 
+/* Team Section */
+.team-section {
+    width: 100%;
+}
+
+.team-section-description {
+    width: 63.301%;
+    margin: 0 auto 6.415%;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 2.086%;
+}
+
+.team-members {
+    border-radius: 18px;
+    box-sizing: border-box;
+    padding: 1.886%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1.75496;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.886%;
+    
+}
+
+.member-container {
+    position: relative;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.member-container .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.member-container img {
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    
+    z-index: 1;
+}
+
+.member-info {
+    position: absolute;
+    bottom: 5.8823%;
+    left: 5.81626%;
+    z-index: 4;
+}
+
+.member-name {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--other-text-color);
+}
+
+.member-designation {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+/* **Footer Related Styles ** */
+/* Footer Section */
+footer {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top:6.11111%;
+    padding: 4.5833% 13.19444% 2.43055%;
+}
+.footer-core-container{
+    width: 100%;
+    display: flex;
+    gap: 9.631%;
+    justify-content: left;
+    align-items: start;
+    
+}
+.footer-description {
+    width: 41.831%;
+    aspect-ratio: 2.5170;
+}
+
+.footer-description h3 {
+    font-size: 4.375rem;
+    margin-bottom: 4.5146%;
+}
+
+.footer-services{
+    width: 48.536%;
+    height: 100%;
+    display: flex;
+    gap: 29.571%;
+    text-align: left;
+}
+.get-started {
+    width: 35.21400778%;
+}
+
+.get-started h3 {
+    margin: 0;
+    margin-bottom: 21.54696%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--other-text-color);
+}
+
+.get-started ul {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-started ul li {
+    width: 100%;
+    margin: 0;
+    font-size: 1.4375rem;
+    margin-bottom: 11.04%;
+    color: rgba(255, 255, 255, 0.5);
+}
+.get-started ul li:last-child{
+    margin-bottom: 0;
+}
+
+footer hr{
+    margin-top: 5.486%;
+    margin-bottom: 2.5%;
+    border: none;
+    width: 100%;
+    aspect-ratio: 529.75;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-rights{
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--regular-text-color);
+}
 /*****Responsive Styles*****/
 /* Small device */
 
@@ -597,7 +748,7 @@ header{
     .side-padding{
         padding: 0% 5.089%;
     }
-    .banner,.join-section, .calculator-and-chart{
+    .banner,.join-section, .calculator-and-chart,.footer-core-container,.footer-services{
         flex-direction: column;
     }
     section{
@@ -846,6 +997,7 @@ header{
 
     .calculator-section-desc{
         margin: 0;
+        margin-bottom: 8.1218%;
         width:fit-content;
     }
     .calculator-section-desc h2{
@@ -915,7 +1067,86 @@ header{
         margin-top: 9.6045%;
     }
 
-    
+    /* ***Team-section related styles*** */
+
+/* Team Section */
+
+    .team-section-description {
+        width: 87.535%;
+    }
+
+    .section-title {
+        margin-bottom: 4.3507%;
+    }
+
+    .team-members {
+        width: 100%;
+        aspect-ratio: 353/1188;
+        padding: 5.665%;
+        grid-template-columns:1fr;
+        gap: 1.683%;
+    }
+
+    .member-container {
+        width: 100%;
+        aspect-ratio: 1.1507;
+    }
+
+    .member-container:nth-child(1),.member-container:nth-child(4){
+        display: none;
+    }
+    .member-container:nth-child(2){
+        order: 1;
+    }
+    .member-container:nth-child(3){
+        order: 3;
+    }
+
+    .member-container:nth-child(5){
+        order: 2;
+    } 
+    .member-container:nth-child(6){
+        order: 4;
+    } 
+
+    /* **Footer Related Styles ** */
+    /* Footer Section */
+    footer {
+        margin: 0;
+        margin-top:16.7938%;
+        padding: 11.1959% 5.089% 14.5038%;
+    }
+    .footer-core-container{
+        width: 100%;
+        aspect-ratio: 353/748;
+        gap: 4.010%;
+    }
+    .footer-description {
+        width: 89.801%;
+        aspect-ratio: 317/200;
+    }
+
+    .footer-description h3 {
+        margin-bottom: 6.30914%;
+    }
+
+    .footer-services{
+        width: 100%;
+        aspect-ratio: 353/518;
+        gap: 3.861%;
+    }
+    .get-started {
+        width: 51.274%;
+    }
+
+    footer hr{
+        margin-top: 20.338%;
+        margin-bottom: 11.581%;
+        aspect-ratio: 177;
+    }
+    .footer-rights{
+        text-align: left;
+    }
 }
 
 
