@@ -679,11 +679,11 @@ footer {
     width: 48.536%;
     height: 100%;
     display: flex;
-    gap: 29.571%;
+    gap: 26.571%;
     text-align: left;
 }
 .get-started {
-    width: 35.21400778%;
+    width: 39.21400778%;
 }
 
 .get-started h3 {
@@ -1128,7 +1128,7 @@ footer hr{
     }
 
     .footer-services{
-        width: 69.2513%;
+        width: 100%;
         aspect-ratio: 353/518;
         gap: 3.861%;
     }
@@ -1137,7 +1137,7 @@ footer hr{
     }
 
     footer hr{
-        margin-top: 20.338%;
+        margin-top: 0%;
         margin-bottom: 11.581%;
         aspect-ratio: 177;
     }
