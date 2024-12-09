@@ -1015,10 +1015,10 @@ footer hr{
     }
 
     .chart-title {
+        margin: 0;
         margin-bottom: 6.5155%;
         font-size: 1rem;
     }
-
     .chart-table {
         width: 87.8186%;
         aspect-ratio: 310/216;
@@ -1031,7 +1031,8 @@ footer hr{
     }
 
     .calculator-title {
-        font-size: 1.rem;
+        margin: 0;
+        font-size: 1rem;
         margin-bottom: 3.95480%;
     }
     .calculator>p{
